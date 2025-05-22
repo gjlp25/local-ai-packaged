@@ -26,7 +26,7 @@ def extract_event_info(event_emitter) -> tuple[Optional[str], Optional[str]]:
 class Pipe:
     class Valves(BaseModel):
         n8n_url: str = Field(
-            default="https://mcpbot.wicaro.nl/webhook/[your webhook URL]"
+            default="https://n8n.[your domain].com/webhook/[your webhook URL]"
         )
         n8n_bearer_token: str = Field(default="...")
         input_field: str = Field(default="chatInput")
